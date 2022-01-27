@@ -6,7 +6,7 @@
 
 # <p align='center'>Java Program Codes </p>
 
-*A collection of Java program codes for beginners.*
+### *A collection of Java program codes for beginners.*
 
 This repository is a collection of my program codes which I wrote while taking the CPL103 - Object Oriented Programming module during my undergraduate course in B.E. Information Technology.
 
