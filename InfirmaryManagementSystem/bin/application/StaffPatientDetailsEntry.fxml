@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <!DOCTYPE xml> -->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StaffPatientDetailsEntryController">
+	<top>
+		<AnchorPane prefHeight="84.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+			<children>
+				<MenuBar prefHeight="19.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+					<menus>
+						<Menu mnemonicParsing="false" text="File">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#HomePageMenuItem" text="Home Page" />
+								<MenuItem mnemonicParsing="false" onAction="#LogOutMenuItem" text="Log Out" />
+								<MenuItem mnemonicParsing="false" onAction="#ExitMenuItem" text="Exit" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="View">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#NewPatientEntryMenuItem" text="New Patient" />
+								<MenuItem mnemonicParsing="false" onAction="#ShowPatientRecordMenuItem" text="Show Patient Record" />
+								<MenuItem mnemonicParsing="false" onAction="#MedicineRecordsMenuItem" text="Medicine Records" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Help">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#CollegeWebsiteLinksMenuItem" text="College Website Links" />
+								<MenuItem mnemonicParsing="false" onAction="#AboutMenuItem" text="About" />
+							</items>
+						</Menu>
+					</menus>
+				</MenuBar>
+				<Label alignment="CENTER" layoutY="26.0" prefHeight="58.0" prefWidth="800.0" style="-fx-background-color: #C5C6C7;" text="New Patient Entry - Staff" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+					<font>
+						<Font name="Roboto Condensed Bold" size="52.0" />
+					</font>
+					<padding>
+						<Insets left="40.0" />
+					</padding>
+				</Label>
+			</children>
+		</AnchorPane>
+	</top>
+	<center>
+		<AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+			<children>
+				<ScrollPane prefHeight="717.0" prefWidth="800.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+					<content>
+						<AnchorPane prefHeight="641.0" prefWidth="799.0">
+							<children>
+								<TextArea fx:id="complaintTextArea" layoutX="31.0" layoutY="266.0" prefHeight="120.0" prefWidth="450.0" />
+								<Label layoutX="32.0" layoutY="25.0" prefHeight="16.0" prefWidth="60.0" text="Name">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</Label>
+								<TextField fx:id="nameTextField" layoutX="32.0" layoutY="50.0" prefHeight="26.0" prefWidth="215.0" />
+								<Label layoutX="532.0" layoutY="26.0" prefHeight="16.0" prefWidth="60.0" text="Reg No.">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</Label>
+								<TextField fx:id="regNoTextField" layoutX="532.0" layoutY="51.0" prefHeight="26.0" prefWidth="176.0" />
+								<!-- <items> -->
+								<!-- <FXCollections fx:factory="observableArrayList"> -->
+								<!-- <String fx:value="ME in RE" /> -->
+								<!-- <String fx:value="ME in CM" /> -->
+								<!-- <String fx:value="BE CE" /> -->
+								<!-- <String fx:value="BE EE" /> -->
+								<!-- <String fx:value="B Arch." /> -->
+								<!-- <String fx:value="BE ECE" /> -->
+								<!-- <String fx:value="BE IT" /> -->
+								<!-- <String fx:value="BE ICE" /> -->
+								<!-- <String fx:value="BE EG" /> -->
+								<!-- </FXCollections> -->
+								<!-- </items> -->
+								<!-- </ComboBox> -->
+								<Label layoutX="303.0" layoutY="25.0" prefHeight="20.0" prefWidth="82.0" text="Department">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</Label>
+								<ComboBox fx:id="departmentComboBox" layoutX="303.0" layoutY="50.0" onAction="#comboChanged" prefHeight="26.0" prefWidth="176.0" promptText="- -" />
+								<!-- <items> -->
+								<!-- <FXCollections fx:factory="observableArrayList"> -->
+								<!-- <String fx:value="Civil Department" /> -->
+								<!-- <String fx:value="Architecture Department" /> -->
+								<!-- <String fx:value="Electrical Department" /> -->
+								<!-- <String fx:value="IT Department" /> -->
+								<!-- <String fx:value="ECE Department" /> -->
+								<!-- <String fx:value="Electrical Department" /> -->
+								<!-- </FXCollections> -->
+								<!-- </items> -->
+								<!-- </ComboBox> -->
+								<Label layoutX="31.0" layoutY="95.0" prefHeight="16.0" prefWidth="60.0" text="Sex">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</Label>
+								<RadioButton fx:id="maleRadioButton" layoutX="31.0" layoutY="124.0" mnemonicParsing="false" onAction="#sexRadioSelect" text="Male">
+									<toggleGroup>
+										<ToggleGroup fx:id="gender" />
+									</toggleGroup>
+								</RadioButton>
+								<RadioButton fx:id="femaleRadioButton" layoutX="90.0" layoutY="124.0" mnemonicParsing="false" onAction="#sexRadioSelect" text="Female" toggleGroup="$gender" />
+								<Label layoutX="170.0" layoutY="93.0" prefHeight="16.0" prefWidth="60.0" text="Age">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</Label>
+								<TextField fx:id="ageTextField" layoutX="170.0" layoutY="118.0" prefHeight="26.0" prefWidth="75.0" />
+								<Label layoutX="534.0" layoutY="93.0" prefHeight="16.0" prefWidth="60.0" text="Date">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</Label>
+								<DatePicker fx:id="DateSelector" layoutX="534.0" layoutY="118.0" prefHeight="26.0" prefWidth="175.0" />
+								<Label layoutX="28.0" layoutY="166.0" prefHeight="16.0" prefWidth="60.0" text="Time">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</Label>
+								<TextField fx:id="timeTextField" layoutX="28.0" layoutY="191.0" prefHeight="26.0" prefWidth="81.0" promptText="Eg 12:00" />
+								<RadioButton fx:id="amRadioButton" layoutX="124.0" layoutY="195.0" mnemonicParsing="false" onAction="#timeRadioSelect" text="AM">
+									<toggleGroup>
+										<ToggleGroup fx:id="timeSelect" />
+									</toggleGroup>
+								</RadioButton>
+								<RadioButton fx:id="pmRadioButton" layoutX="172.0" layoutY="195.0" mnemonicParsing="false" onAction="#timeRadioSelect" text="PM" toggleGroup="$timeSelect" />
+								<Label layoutX="31.0" layoutY="239.0" prefHeight="20.0" prefWidth="159.0" text="Complaint / Treatment ">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</Label>
+								<Label layoutX="518.0" layoutY="239.0" prefHeight="20.0" prefWidth="159.0" text="Remarks">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</Label>
+								<TextArea fx:id="remarksTextArea" layoutX="519.0" layoutY="266.0" prefHeight="120.0" prefWidth="232.0" />
+								<Label layoutX="305.0" layoutY="165.0" prefHeight="20.0" prefWidth="97.0" text="Leave Options ">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</Label>
+								<ComboBox fx:id="leaveOptionsComboBox" layoutX="305.0" layoutY="191.0" onAction="#comboChanged" prefHeight="26.0" prefWidth="190.0" promptText="- - " />
+								<Label layoutX="538.0" layoutY="165.0" prefHeight="20.0" prefWidth="82.0" text="No. of Days ">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</Label>
+								<TextField fx:id="leaveDaysTextField" layoutX="538.0" layoutY="191.0" prefHeight="26.0" prefWidth="81.0" />
+								<Label layoutX="303.0" layoutY="94.0" prefHeight="20.0" prefWidth="73.0" text="Phone No.">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</Label>
+								<TextField fx:id="phoneNoTextField" layoutX="303.0" layoutY="119.0" prefHeight="26.0" prefWidth="176.0" promptText="Eg 17358766" />
+								<Button fx:id="saveButton" layoutX="662.0" layoutY="576.0" mnemonicParsing="false" onAction="#saveDetails" prefHeight="14.0" prefWidth="66.0" text="Save">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</Button>
+								<Button fx:id="backButton" layoutX="571.0" layoutY="577.0" mnemonicParsing="false" onAction="#homePage" prefHeight="14.0" prefWidth="66.0" text="Back">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</Button>
+								<Label layoutX="30.0" layoutY="418.0" prefHeight="20.0" prefWidth="75.0" text="Medicine ">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</Label>
+                        <ComboBox fx:id="medicineComboBox" layoutX="114.0" layoutY="415.0" prefHeight="26.0" prefWidth="186.0" promptText="- - " />
+								<Label layoutX="30.0" layoutY="458.0" prefHeight="20.0" prefWidth="80.0" text="Quantity">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</Label>
+								<TextField fx:id="medicineQuantityTextField" layoutX="116.0" layoutY="455.0" prefHeight="26.0" prefWidth="185.0" text="0" />
+								<Label layoutX="416.0" layoutY="417.0" prefHeight="20.0" prefWidth="77.0" text="Injection ">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</Label>
+                        <ComboBox fx:id="injectionComboBox" layoutX="535.0" layoutY="415.0" prefHeight="26.0" prefWidth="186.0" promptText="- - " />
+								<Label layoutX="415.0" layoutY="457.0" prefHeight="20.0" prefWidth="80.0" text="Quantity">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</Label>
+								<TextField fx:id="injectionQuantityTextField" layoutX="537.0" layoutY="454.0" prefHeight="26.0" prefWidth="184.0" text="0" />
+								<CheckBox fx:id="medicineChecBox" layoutX="114.0" layoutY="502.0" mnemonicParsing="false" onAction="#medicinePrescribed" prefHeight="26.0" prefWidth="202.0" text="Prescribe Medicine">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</CheckBox>
+								<CheckBox fx:id="injectionChecBox" layoutX="537.0" layoutY="502.0" mnemonicParsing="false" onAction="#prescribeInjection" prefHeight="26.0" prefWidth="202.0" text="Prescribe Injection">
+									<font>
+										<Font name="Cambria" size="15.0" />
+									</font>
+								</CheckBox>
+                        <Label fx:id="nameErrorMessage" layoutX="134.0" layoutY="76.0" prefHeight="20.0" prefWidth="115.0" text="*Please Enter your name" textFill="RED" visible="false">
+                           <font>
+                              <Font name="Arial" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ageErrorMessage" layoutX="172.0" layoutY="146.0" prefHeight="20.0" prefWidth="87.0" text="*Please Enter Age" textFill="RED" visible="false">
+                           <font>
+                              <Font name="Arial" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="genderErrorMessage" layoutX="35.0" layoutY="146.0" prefHeight="20.0" prefWidth="87.0" text="*Please Select One" textFill="RED" visible="false">
+                           <font>
+                              <Font name="Arial" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="deptErrorMessage" layoutX="391.0" layoutY="76.0" prefHeight="20.0" prefWidth="87.0" text="*Please Select One" textFill="RED" visible="false">
+                           <font>
+                              <Font name="Arial" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="phoneNoErrorMessage" layoutX="333.0" layoutY="146.0" prefHeight="20.0" prefWidth="150.0" text="*Please Enter a Valid Phone No" textFill="RED" visible="false">
+                           <font>
+                              <Font name="Arial" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="complaintErrorMessage" layoutX="409.0" layoutY="386.0" prefHeight="20.0" prefWidth="75.0" text="*Please Fill Up" textFill="RED" visible="false">
+                           <font>
+                              <Font name="Arial" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="remarksErrorMessage" layoutX="678.0" layoutY="386.0" prefHeight="20.0" prefWidth="73.0" text="*Please Filll Up" textFill="RED" visible="false">
+                           <font>
+                              <Font name="Arial" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="leaveDaysErrorMessage" layoutX="554.0" layoutY="217.0" prefHeight="20.0" prefWidth="75.0" text="*Please Fill Up" textFill="RED" visible="false">
+                           <font>
+                              <Font name="Arial" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="leaveOptionsErrorMessage" layoutX="411.0" layoutY="217.0" prefHeight="20.0" prefWidth="87.0" text="*Please Select One" textFill="RED" visible="false">
+                           <font>
+                              <Font name="Arial" size="10.0" />
+                           </font>
+                        </Label>
+							</children>
+						</AnchorPane>
+					</content>
+				</ScrollPane>
+			</children>
+		</AnchorPane>
+	</center>
+</BorderPane>

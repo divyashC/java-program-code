@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+	prefWidth="800.0" style="-fx-background-color: white;"
+	xmlns="http://javafx.com/javafx/15.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.LoginPageController">
+	<left>
+		<AnchorPane prefHeight="600.0" prefWidth="400.0"
+			BorderPane.alignment="CENTER">
+			<children>
+				<ImageView fitHeight="200.0" fitWidth="200.0"
+					layoutX="100.0" layoutY="122.0">
+					<image>
+						<Image url="@../../Images/CollegeLogo200px.png" />
+					</image>
+				</ImageView>
+				<Label layoutX="37.0" layoutY="347.0"
+					text="College of Science and Technology">
+					<font>
+						<Font name="Roboto Condensed Bold" size="24.0" />
+					</font>
+				</Label>
+				<Label layoutX="92.0" layoutY="396.0"
+					text="Infirmary Management System">
+					<font>
+						<Font name="Roboto Condensed Bold" size="18.0" />
+					</font>
+				</Label>
+			</children>
+		</AnchorPane>
+	</left>
+	<right>
+		<AnchorPane prefHeight="600.0" prefWidth="400.0"
+			BorderPane.alignment="CENTER">
+			<children>
+				<ImageView fitHeight="571.0" fitWidth="415.0"
+					layoutX="32.0" layoutY="14.0" pickOnBounds="true"
+					preserveRatio="true">
+					<image>
+						<Image url="@../../Images/LoginRightPanel.png" />
+					</image>
+				</ImageView>
+				<Label layoutX="139.0" layoutY="188.0" prefHeight="34.0"
+					prefWidth="127.0" text="Admin Login">
+					<font>
+						<Font name="Roboto Condensed Bold" size="25.0" />
+					</font>
+				</Label>
+				<Label layoutX="94.0" layoutY="289.0" text="Username">
+					<font>
+						<Font name="Roboto Condensed Bold" size="16.0" />
+					</font>
+				</Label>
+				<TextField fx:id="usernameTextField" layoutX="90.0"
+					layoutY="325.0" prefHeight="25.0" prefWidth="220.0"
+					promptText="Enter Username">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</TextField>
+				<Label layoutX="95.0" layoutY="382.0" text="Password">
+					<font>
+						<Font name="Roboto Condensed Bold" size="16.0" />
+					</font>
+				</Label>
+				<PasswordField fx:id="passwordField" layoutX="90.0"
+					layoutY="418.0" prefHeight="25.0" prefWidth="220.0"
+					promptText="Enter Password">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</PasswordField>
+				<Button fx:id="loginButton" layoutX="239.0" layoutY="489.0"
+					mnemonicParsing="false" onAction="#userLogin" prefHeight="32.0"
+					prefWidth="70.0" text="Login">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</Button>
+			</children>
+		</AnchorPane>
+	</right>
+</BorderPane>

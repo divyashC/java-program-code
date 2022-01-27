@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <!DOCTYPE xml> -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CollegeWebsiteLinksController">
+	<top>
+		<AnchorPane prefHeight="183.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+			<children>
+				<MenuBar prefHeight="19.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+					<menus>
+						<Menu mnemonicParsing="false" text="File">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#HomePageMenuItem" text="Home Page" />
+								<MenuItem mnemonicParsing="false" onAction="#LogOutMenuItem" text="Log Out" />
+								<MenuItem mnemonicParsing="false" onAction="#ExitMenuItem" text="Exit" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="View">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#NewPatientEntryMenuItem" text="New Patient" />
+								<MenuItem mnemonicParsing="false" onAction="#ShowPatientRecordMenuItem" text="Show Patient Record" />
+								<MenuItem mnemonicParsing="false" onAction="#MedicineRecordsMenuItem" text="Medicine Records" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Help">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#CollegeWebsiteLinksMenuItem" text="College Website Links" />
+								<MenuItem mnemonicParsing="false" onAction="#AboutMenuItem" text="About" />
+							</items>
+						</Menu>
+					</menus>
+				</MenuBar>
+				<ImageView fitHeight="250.0" fitWidth="800.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../Images/HomePageHeader.png" />
+					</image>
+				</ImageView>
+			</children>
+		</AnchorPane>
+	</top>
+	<center>
+		<AnchorPane prefHeight="350.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+			<children>
+				<Button fx:id="HomePage" layoutX="599.0" layoutY="337.0" mnemonicParsing="false" onAction="#HomePage" prefHeight="26.0" prefWidth="74.0" text="Home">
+					<font>
+						<Font name="Roboto Condensed Bold" size="18.0" />
+					</font>
+				</Button>
+            <Button fx:id="Logout" layoutX="687.0" layoutY="337.0" mnemonicParsing="false" onAction="#userLogout" prefHeight="26.0" prefWidth="74.0" text="Logout">
+               <font>
+                  <Font name="Roboto Condensed Bold" size="18.0" />
+               </font>
+            </Button>
+				<Label layoutX="250.0" layoutY="52.0" prefHeight="28.0" prefWidth="104.0" text="CST Website">
+					<font>
+						<Font name="Roboto Condensed Bold" size="20.0" />
+					</font>
+				</Label>
+            <Hyperlink fx:id="cstWebsite" layoutX="397.0" layoutY="55.0" onAction="#cstWebsite" prefHeight="23.0" prefWidth="183.0" text="https://cst.edu.bt/index.php/en/" />
+            <Label layoutX="250.0" layoutY="92.0" prefHeight="28.0" prefWidth="114.0" text="RUB IMS">
+               <font>
+                  <Font name="Roboto Condensed Bold" size="20.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="rubIMS" layoutX="397.0" layoutY="94.0" onAction="#rubIMS" prefHeight="23.0" prefWidth="183.0" text="https://ims.rub.edu.bt/" />
+            <Label layoutX="250.0" layoutY="132.0" prefHeight="28.0" prefWidth="114.0" text="Mail">
+               <font>
+                  <Font name="Roboto Condensed Bold" size="20.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="mail" layoutX="397.0" layoutY="134.0" onAction="#mail" prefHeight="23.0" prefWidth="183.0" text="http://mail.rub.edu.bt/" />
+            <Label layoutX="250.0" layoutY="172.0" prefHeight="28.0" prefWidth="114.0" text="VLE (Moodle)">
+               <font>
+                  <Font name="Roboto Condensed Bold" size="20.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="vle" layoutX="397.0" layoutY="174.0" onAction="#vle" prefHeight="23.0" prefWidth="183.0" text="https://vle.cst.edu.bt/" />
+            <Label layoutX="250.0" layoutY="212.0" prefHeight="28.0" prefWidth="114.0" text="Library ">
+               <font>
+                  <Font name="Roboto Condensed Bold" size="20.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="library" layoutX="397.0" layoutY="214.0" onAction="#library" prefHeight="23.0" prefWidth="183.0" text="https://lib.cst.edu.bt/" />
+            <Label layoutX="250.0" layoutY="252.0" prefHeight="28.0" prefWidth="114.0" text="MRBS">
+               <font>
+                  <Font name="Roboto Condensed Bold" size="20.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="mrbs" layoutX="397.0" layoutY="254.0" onAction="#mrbs" prefHeight="23.0" prefWidth="223.0" text="https://vle.cst.edu.bt/mrbs/web/day.php" />
+            <Separator layoutX="378.0" layoutY="48.0" orientation="VERTICAL" prefHeight="234.0" prefWidth="4.0" />
+            <Label layoutX="319.0" layoutY="-4.0" prefHeight="31.0" prefWidth="124.0" text="Web Links">
+               <font>
+                  <Font name="Cambria Bold" size="25.0" />
+               </font>
+            </Label>
+			</children>
+		</AnchorPane>
+	</center>
+</BorderPane>

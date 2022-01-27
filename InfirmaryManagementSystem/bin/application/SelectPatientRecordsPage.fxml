@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <!DOCTYPE xml> -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SelectPatientRecordsPageController">
+	<top>
+		<AnchorPane prefHeight="183.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+			<children>
+				<MenuBar prefHeight="19.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+					<menus>
+						<Menu mnemonicParsing="false" text="File">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#HomePageMenuItem" text="Home Page" />
+								<MenuItem mnemonicParsing="false" onAction="#LogOutMenuItem" text="Log Out" />
+								<MenuItem mnemonicParsing="false" onAction="#ExitMenuItem" text="Exit" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="View">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#NewPatientEntryMenuItem" text="New Patient" />
+								<MenuItem mnemonicParsing="false" onAction="#ShowPatientRecordMenuItem" text="Show Patient Record" />
+								<MenuItem mnemonicParsing="false" onAction="#MedicineRecordsMenuItem" text="Medicine Records" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Help">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#CollegeWebsiteLinksMenuItem" text="College Website Links" />
+								<MenuItem mnemonicParsing="false" onAction="#AboutMenuItem" text="About" />
+							</items>
+						</Menu>
+					</menus>
+				</MenuBar>
+				<ImageView fitHeight="250.0" fitWidth="800.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../Images/HomePageHeader.png" />
+					</image>
+				</ImageView>
+            <Separator layoutX="158.0" layoutY="188.0" prefWidth="485.0" />
+			</children>
+		</AnchorPane>
+	</top>
+	<center>
+		<AnchorPane prefHeight="350.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+			<children>
+				<Button fx:id="StudentsButton" layoutX="65.0" layoutY="78.0" mnemonicParsing="false" onAction="#studentRecords" prefHeight="180.0" prefWidth="180.0" text="New Patient">
+					<effect>
+						<ImageInput>
+							<source>
+								<Image url="file:/C:/Users/USER/eclipse-workspace/InfirmaryManagementSystem/Images/StudentsIcon.png" />
+							</source>
+						</ImageInput>
+					</effect>
+				</Button>
+				<Label layoutX="119.0" layoutY="274.0" text="Students">
+					<font>
+						<Font name="Roboto Condensed Bold" size="20.0" />
+					</font>
+				</Label>
+				<Button fx:id="StaffButton" layoutX="310.0" layoutY="78.0" mnemonicParsing="false" onAction="#staffRecords" prefHeight="180.0" prefWidth="180.0" text="Patient Records">
+					<effect>
+						<ImageInput>
+							<source>
+								<Image url="file:/C:/Users/USER/eclipse-workspace/InfirmaryManagementSystem/Images/Staff%20Icon.png" />
+							</source>
+						</ImageInput>
+					</effect>
+				</Button>
+				<Label layoutX="380.0" layoutY="272.0" text="Staff">
+					<font>
+						<Font name="Roboto Condensed Bold" size="20.0" />
+					</font>
+				</Label>
+				<Button fx:id="OthersButton" layoutX="555.0" layoutY="78.0" mnemonicParsing="false" onAction="#OthersRecords" prefHeight="180.0" prefWidth="180.0" text="Export Prescription">
+					<effect>
+						<ImageInput>
+							<source>
+								<Image url="file:/C:/Users/USER/eclipse-workspace/InfirmaryManagementSystem/Images/OthersIcon.png" />
+							</source>
+						</ImageInput>
+					</effect>
+				</Button>
+				<Label layoutX="619.0" layoutY="272.0" text="Others">
+					<font>
+						<Font name="Roboto Condensed Bold" size="20.0" />
+					</font>
+				</Label>
+				<Button fx:id="BackButton" layoutX="687.0" layoutY="334.0" mnemonicParsing="false" onAction="#userBack" prefHeight="26.0" prefWidth="74.0" text="Back">
+					<font>
+						<Font name="Roboto Condensed Bold" size="18.0" />
+					</font>
+				</Button>
+            <Label layoutX="269.0" layoutY="-6.0" text="PATIENT RECORDS">
+               <font>
+                  <Font name="Calibri Bold" size="34.0" />
+               </font>
+            </Label>
+			</children>
+		</AnchorPane>
+	</center>
+</BorderPane>
