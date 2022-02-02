@@ -79,7 +79,7 @@ _I hope this repository helps you in one way or the other. Please dont take my c
  <a href="https://stackoverflow.com/users/15124365" target="_blank">
   <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="divyashC's StackOverflow Profile"  width="40" height="40"/>    
  </a>
- <a href="https://www.linkedin.com/in/divyash-c-b72a58127/" target="_blank">
+ <a href="https://www.linkedin.com/in/divyashc/" target="_blank">
   <img src="https://github.com/devicons/devicon/blob/master/icons/linkedin/linkedin-original.svg" alt="divyashC's LinkedIn"  width="40" height="40"/>    
  </a>
  <a href="https://discord.com/users/Dork#0448" target="_blank">
