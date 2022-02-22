@@ -6,7 +6,7 @@
 
 # <p align='center'>Java Program Codes </p>
 
-### *A collection of Java program codes for beginners.*
+### _A collection of Java program codes for beginners._
 
 This repository is a collection of my program codes which I wrote while taking the CPL103 - Object Oriented Programming module during my undergraduate course in B.E. Information Technology.
 
@@ -34,6 +34,8 @@ All the program codes written during my lab class are in this repository in its 
 	<li><a href="https://github.com/divyashC/java-program-codes/tree/main/Lab11" target="_blank">Lab Report 11</a></li>
 	<li><a href="https://github.com/divyashC/java-program-codes/tree/main/Lab12" target="_blank">Lab Report 12</a></li>
 </ul>
+
+All the [lab questions](https://github.com/divyashC/java-program-codes/tree/main/Questions) are in the '[Questions](https://github.com/divyashC/java-program-codes/tree/main/Questions)' directory.
 
 #### Assignment Program Code
 
