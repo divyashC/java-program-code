@@ -35,7 +35,7 @@ All the program codes written during my lab class are in this repository in its 
 	<li><a href="https://github.com/divyashC/java-program-codes/tree/main/Lab12" target="_blank">Lab Report 12</a></li>
 </ul>
 
-All the [lab questions](https://github.com/divyashC/java-program-codes/tree/main/Questions) are in the '[Questions](https://github.com/divyashC/java-program-codes/tree/main/Questions)' directory.
+All the [lab questions](https://github.com/divyashC/java-program-codes/tree/main/Questions) are in the [Questions](https://github.com/divyashC/java-program-codes/tree/main/Questions) directory.
 
 #### Assignment Program Code
 
